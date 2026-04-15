@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": [
+      "ES2017",
+      "DOM"
+    ],
+    "module": "ESNext",
+    "strict": true,
+    "outDir": "./dist"
+  },
+  "include": [
+    "content.ts"
+  ]
+}

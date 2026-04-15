@@ -1,0 +1,17 @@
+{
+  "name": "yt-shorts-blocker",
+  "version": "0.1.0",
+  "description": "Youtube Shorts Blocker Browser Extension",
+  "main": "content.js",
+  "scripts": {
+    "build": "tsc",
+    "package:firefox": "npm run build && mkdir -p release && zip -r release/yt-shorts-blocker.zip manifest.json dist/ && mv release/yt-shorts-blocker.zip release/yt-shorts-blocker.xpi",
+    "package:chrome": "npm run build && mkdir -p release && zip -r release/yt-shorts-blocker.zip manifest.json dist/",
+    "package:all": "npm run package:firefox && npm run package:chrome"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "author": "",
+  "license": "MIT"
+}
